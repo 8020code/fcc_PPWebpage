@@ -22,9 +22,13 @@
         }
 
         body {
-            /*background: url("http://img03.deviantart.net/94a6/i/2006/106/6/a/blue_matrix_by_bboisupafly.jpg")
-            color: white;           */
+            background: url("http://img03.deviantart.net/94a6/i/2006/106/6/a/blue_matrix_by_bboisupafly.jpg");
+            color: white;           
             font-family: 'Raleway', sans-serif;
+        }
+
+        .btn-circle {
+            border-radius: 50%;
 
         }
     </style>
@@ -61,26 +65,27 @@
                     <div class="nav-item nav-link" data-toggle="collapse" data-target="#navbarNavAltMarkup">
                         <a href="#contact" class="btn btn-outline-light" role="button">Contact</a>
                     </div>
+                    <!-- <div class="navbar-nav flex-row ml-md-auto d-none d-md-flex"> -->
 
                     <div class="nav-item" data-toggle="collapse" data-target="#navbarNavAltMarkup">
                         <a class="nav-link" href="https://goo.gl/vaZ2JS" role="button">
-                            <i class="fa fa-github align-bottom" aria-hidden="true"></i>
+                            <i class="fa fa-github  align-bottom" aria-hidden="true"></i>
                         </a>
                     </div>
 
                     <div class="nav-item" data-toggle="collapse" data-target="#navbarNavAltMarkup">
                         <a class="nav-link" href="https://goo.gl/j6Djzf">
-                            <i class="fa fa-twitter align-bottom" aria-hidden="true"></i>
+                            <i class="fa fa-twitter  align-bottom" aria-hidden="true"></i>
                         </a>
                     </div>
                     <div class="nav-item" data-toggle="collapse" data-target="#navbarNavAltMarkup">
                         <a class="nav-link" href="https://goo.gl/dYR1BD">
-                            <i class="fa fa-codepen align-bottom" aria-hidden="true"></i>
+                            <i class="fa fa-codepen  align-bottom" aria-hidden="true"></i>
                         </a>
                     </div>
                     <div class="nav-item" data-toggle="collapse" data-target="#navbarNavAltMarkup">
                         <a class="nav-link" href="https://goo.gl/ArzjeE">
-                            <i class="fa fa-youtube align-bottom" aria-hidden="true"></i>
+                            <i class="fa fa-youtube  align-bottom" aria-hidden="true"></i>
                         </a>
                     </div>
                     <div class="nav-item" data-toggle="collapse" data-target="#navbarNavAltMarkup">
@@ -88,6 +93,7 @@
                             <i class="fa fa-free-code-camp align-bottom" aria-hidden="true"></i>
                         </a>
                     </div>
+                    <!-- </div> -->
                 </div>
             </div>
         </nav>
@@ -103,7 +109,6 @@
             <p class="text-justify">I myself am a beginner front end developer, looking forward to becoming a full stack developer. I have some experience
                 with Java and currently diving deep into the front end development world. My previous experience is in finance
                 and accounting mostly.</p>
-
         </div>
         <hr>
     </div>
@@ -111,9 +116,9 @@
     <div id="portfolio" class="container">
         <h1>Portfolio</h1>
         <p class="text-justify">At this point there is not much to show for, but here are some nice looking pictures for now.</p>
-        <div class="row">
+        <!--<div class="row">
 
-            <!--    <div class="col">
+            <div class="col">
                 <div class="card border-primary mb-3" style="width: 20rem;">
                     <img class="card-img-top" src="https://images.unsplash.com/photo-1465237392552-2f11d0f540d4?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=1922afd60b610072de6ca34903c38a89"
                         alt="Card image cap">
@@ -171,71 +176,106 @@
                 </div>
             </div>
         </div>-->
-            <hr>
+        <hr>
+    </div>
+
+    <!--Portfolio end-->
+
+    <div id="contact" class="container">
+        <h1>Contact</h1>
+        <div class="alert alert-danger" role="alert">
+            <p>form is disabled for now</p>
         </div>
+    </div>
 
-        <!--Portfolio end-->
-
-        <div id="contact" class="container">
-            <h1>Contact</h1>
-            <div class="alert alert-danger" role="alert">
-                <p>form is disabled for now</p>
-            </div>
-        </div>
-
-        <div id="cform" class="container">
-            <form>
-                <div class="form-group">
-                    <label class="col-form-label" for="cfname">Your Name</label>
-                    <div class="form-row">
-                        <div class="col-xs">
-                            <div class="input-group">
-                                <input class="form-control" type="text" placeholder="Your name" id="cfname" disabled/>
-                            </div>
+    <div id="cform" class="container">
+        <form>
+            <div class="form-group">
+                <label class="col-form-label" for="cfname">Your Name</label>
+                <div class="form-row">
+                    <div class="col-xs">
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Your name" id="cfname" disabled/>
                         </div>
                     </div>
-                    <label class="col-form-label" for="cfmessage">Message</label>
-                    <div class="form-row">
-                        <div class="col-sm">
-                            <div class="input-group ">
-                                <textarea placeholder="Message" class="form-control" id="cfmessage" disabled></textarea>
-                            </div>
-                        </div>
-                    </div>
-
-                    <label class="col-form-label" for="cfemail">Email</label>
-                    <div class="form-row">
-                        <div class="col-xs">
-                            <div class="input-group">
-                                <div class="input-group-addon">@</div>
-                                <input class="form-control" type="email" placeholder="Email" id="cfemail" disabled>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <button class="btn btn-primary" type="submit" disabled>Submit</button>
+                </div>
+                <label class="col-form-label" for="cfmessage">Message</label>
+                <div class="form-row">
+                    <div class="col-sm">
+                        <div class="input-group ">
+                            <textarea placeholder="Message" class="form-control" id="cfmessage" disabled></textarea>
                         </div>
                     </div>
                 </div>
 
-            </form>
+                <label class="col-form-label" for="cfemail">Email</label>
+                <div class="form-row">
+                    <div class="col-xs">
+                        <div class="input-group">
+                            <div class="input-group-addon">@</div>
+                            <input class="form-control" type="email" placeholder="Email" id="cfemail" disabled>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-primary" type="submit" disabled>Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <hr>
+    </div>
+    <!--footer-->
+    <div class="container">
+        <h1>Social media</h1>
+
+        <div class="row text-center">
+
+            <div class="col">
+                <a class="btn btn-primary rounded-circle border border-white" href="https://goo.gl/vaZ2JS" role="button">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="col">
+                <a class="btn btn-primary rounded-circle border border-white"  href="https://goo.gl/j6Djzf">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col">
+                <a class="btn btn-primary rounded-circle border border-white" href="https://goo.gl/dYR1BD">
+                    <i class="fa fa-codepen" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col">
+                <a class="btn btn-primary rounded-circle border border-white"  href="https://goo.gl/ArzjeE">
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col">
+                <a class="btn btn-primary rounded-circle border border-white" style="padding: 0.4rem 0.55rem;"href="https://goo.gl/8SdvkS">
+                    <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+                </a>
+            </div>
+
+
         </div>
-        <!--footer-->
+        <hr>
+    </div>
+    
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="nav-link" href="#home">Top</a>
+
+    </nav>
 
 
-        <div>
-            <nav class="navbar navbar-dark bg-dark">
-
-                <a class="nav-link " href="#home">Top</a>
-            </nav>
-        </div>
-
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-            crossorigin="anonymous"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
