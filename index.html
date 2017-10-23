@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+
     <style>
         *[id]:before {
             display: block;
@@ -17,6 +19,13 @@
 
         #home {
             margin-top: 50px;
+        }
+
+        body {
+            /*background: url("http://img03.deviantart.net/94a6/i/2006/106/6/a/blue_matrix_by_bboisupafly.jpg")
+            color: white;           */
+            font-family: 'Raleway', sans-serif;
+
         }
     </style>
 
@@ -35,48 +44,57 @@
 
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <div class="nav-item nav-link">
+                    <div class="nav-item nav-link" data-toggle="collapse" data-target="#navbarNavAltMarkup">
                         <a class="btn btn-outline-light" role="button" href="#home">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </div>
 
-                    <div class="nav-item nav-link">
+                    <div class="nav-item nav-link" data-toggle="collapse" data-target="#navbarNavAltMarkup">
                         <a class="btn btn-outline-light" role="button" href="#about">About</a>
                     </div>
 
-                    <div class="nav-item nav-link">
-                        <a class="btn btn-outline-light" role="button" href="#portfolio">
-                            Portfolio
+                    <div class="nav-item nav-link" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                        <a class="btn btn-outline-light" role="button" href="#portfolio">Portfolio</a>
+                    </div>
+
+                    <div class="nav-item nav-link" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                        <a href="#contact" class="btn btn-outline-light" role="button">Contact</a>
+                    </div>
+
+                    <div class="nav-item" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                        <a class="nav-link" href="https://goo.gl/vaZ2JS" role="button">
+                            <i class="fa fa-github align-bottom" aria-hidden="true"></i>
                         </a>
                     </div>
 
-                    <div class="nav-item nav-link">
-                        <a class="btn btn-outline-light" role="button" href="#contact">Contact</a>
+                    <div class="nav-item" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                        <a class="nav-link" href="https://goo.gl/j6Djzf">
+                            <i class="fa fa-twitter align-bottom" aria-hidden="true"></i>
+                        </a>
                     </div>
-
-                    <a class="nav-item nav-link " href="https://goo.gl/vaZ2JS">
-                        <i class="fa fa-github align-bottom" aria-hidden="true"></i>
-                    </a>
-                    <a class="nav-item nav-link " href="https://goo.gl/j6Djzf">
-                        <i class="fa fa-twitter align-bottom" aria-hidden="true"></i>
-                    </a>
-                    <a class="nav-item nav-link " href="https://goo.gl/dYR1BD">
-                        <i class="fa fa-codepen align-bottom" aria-hidden="true"></i>
-                    </a>
-                    <a class="nav-item nav-link " href="https://goo.gl/ArzjeE">
-                        <i class="fa fa-youtube align-bottom" aria-hidden="true"></i>
-                    </a>
-                    <a class="nav-item nav-link " href="https://goo.gl/8SdvkS">
-                        <i class="fa fa-free-code-camp align-bottom" aria-hidden="true"></i>
-                    </a>
+                    <div class="nav-item" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                        <a class="nav-link" href="https://goo.gl/dYR1BD">
+                            <i class="fa fa-codepen align-bottom" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="nav-item" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                        <a class="nav-link" href="https://goo.gl/ArzjeE">
+                            <i class="fa fa-youtube align-bottom" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="nav-item" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                        <a class="nav-link" href="https://goo.gl/8SdvkS">
+                            <i class="fa fa-free-code-camp align-bottom" aria-hidden="true"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
     </div>
 
     <div id="home" class="container">
-        <header class="display-1 mt-3">8020code</header>
+        <header id="header" class="display-1 mt-3">8020code</header>
         <div id="content">
             <hr>
             <h1 id="about">About</h1>
@@ -95,12 +113,12 @@
         <p class="text-justify">At this point there is not much to show for, but here are some nice looking pictures for now.</p>
         <div class="row">
 
-            <div class="col">
+            <!--    <div class="col">
                 <div class="card border-primary mb-3" style="width: 20rem;">
                     <img class="card-img-top" src="https://images.unsplash.com/photo-1465237392552-2f11d0f540d4?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=1922afd60b610072de6ca34903c38a89"
                         alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text">Project #1.</p>
+                        <p class="card-text text-primary">Project #1.</p>
                     </div>
                 </div>
             </div>
@@ -110,7 +128,7 @@
                     <img class="card-img-top" src="https://images.unsplash.com/photo-1477092881686-6e1eec0878d5?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=25749e6512bab734bbdcb4a5c620d9f1"
                         alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text">Project #2.</p>
+                        <p class="card-text text-primary">Project #2.</p>
                     </div>
                 </div>
             </div>
@@ -120,7 +138,7 @@
                     <img class="card-img-top" src="https://images.unsplash.com/photo-1489376646075-cd00ac377106?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=90df60d4f9cd9e8d2f5c82589b666536"
                         alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text">Project #3.</p>
+                        <p class="card-text text-primary">Project #3.</p>
                     </div>
                 </div>
             </div>
@@ -129,7 +147,7 @@
                     <img class="card-img-top" src="https://images.unsplash.com/photo-1465237392552-2f11d0f540d4?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=1922afd60b610072de6ca34903c38a89"
                         alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text">Project #4.</p>
+                        <p class="card-text text-primary">Project #4.</p>
                     </div>
                 </div>
             </div>
@@ -138,7 +156,7 @@
                     <img class="card-img-top" src="https://images.unsplash.com/photo-1477092881686-6e1eec0878d5?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=25749e6512bab734bbdcb4a5c620d9f1"
                         alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text">Project #5.</p>
+                        <p class="card-text text-primary">Project #5.</p>
                     </div>
                 </div>
 
@@ -148,76 +166,76 @@
                     <img class="card-img-top" src="https://images.unsplash.com/photo-1489376646075-cd00ac377106?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=90df60d4f9cd9e8d2f5c82589b666536"
                         alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text">Project #6.</p>
+                        <p class="card-text text-primary">Project #6.</p>
                     </div>
                 </div>
             </div>
+        </div>-->
+            <hr>
         </div>
-        <hr>
-    </div>
 
-    <!--Portfolio end-->
+        <!--Portfolio end-->
 
-    <div id="contact" class="container">
-        <h1>Contact</h1>
-        <div class="alert alert-danger" role="alert">
-            <p>form is disabled for now</p>
-        </div>
-    </div>
-
-    <div id="cform" class="container">
-        <form>
-            <div class="form-group">
-                <label class="col-form-label" for="cfname">Your Name</label>
-                <div class="form-row">
-                    <div class="col-xs">
-                        <div class="input-group">
-                            <input class="form-control" type="text" placeholder="Your name" id="cfname" disabled/>
-                        </div>
-                    </div>
-                </div>
-                <label class="col-form-label" for="cfmessage">Message</label>
-                <div class="form-row">
-                    <div class="col-sm">
-                        <div class="input-group ">
-                            <textarea placeholder="Message" class="form-control" id="cfmessage" disabled></textarea>
-                        </div>
-                    </div>
-                </div>
-
-                <label class="col-form-label" for="cfemail">Email</label>
-                <div class="form-row">
-                    <div class="col-xs">
-                        <div class="input-group">
-                            <div class="input-group-addon">@</div>
-                            <input class="form-control" type="email" placeholder="Email" id="cfemail" disabled>
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <button class="btn btn-primary" type="submit" disabled>Submit</button>
-                    </div>
-                </div>
+        <div id="contact" class="container">
+            <h1>Contact</h1>
+            <div class="alert alert-danger" role="alert">
+                <p>form is disabled for now</p>
             </div>
+        </div>
 
-        </form>
-    </div>
-    <!--footer-->
+        <div id="cform" class="container">
+            <form>
+                <div class="form-group">
+                    <label class="col-form-label" for="cfname">Your Name</label>
+                    <div class="form-row">
+                        <div class="col-xs">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="Your name" id="cfname" disabled/>
+                            </div>
+                        </div>
+                    </div>
+                    <label class="col-form-label" for="cfmessage">Message</label>
+                    <div class="form-row">
+                        <div class="col-sm">
+                            <div class="input-group ">
+                                <textarea placeholder="Message" class="form-control" id="cfmessage" disabled></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <label class="col-form-label" for="cfemail">Email</label>
+                    <div class="form-row">
+                        <div class="col-xs">
+                            <div class="input-group">
+                                <div class="input-group-addon">@</div>
+                                <input class="form-control" type="email" placeholder="Email" id="cfemail" disabled>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-primary" type="submit" disabled>Submit</button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <!--footer-->
 
 
-    <div>
-        <nav class="navbar navbar-dark bg-dark">
+        <div>
+            <nav class="navbar navbar-dark bg-dark">
 
                 <a class="nav-link " href="#home">Top</a>
-                </nav>
-    </div>
+            </nav>
+        </div>
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
