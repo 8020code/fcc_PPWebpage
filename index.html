@@ -51,47 +51,47 @@
 
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <div class="nav-item nav-link" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                    <div class="nav-item nav-link">
                         <a class="btn btn-sm btn-outline-light" role="button" href="#home">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </div>
 
-                    <div class="nav-item nav-link" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                    <div class="nav-item nav-link">
                         <a class="btn btn-sm  btn-outline-light" role="button" href="#about">About</a>
                     </div>
 
-                    <div class="nav-item nav-link" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                    <div class="nav-item nav-link">
                         <a class="btn btn-sm btn-outline-light" role="button" href="#content2">Portfolio</a>
                     </div>
 
-                    <div class="nav-item nav-link" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                    <div class="nav-item nav-link">
                         <a href="#contact" class="btn btn-sm btn-outline-light" role="button">Contact</a>
                     </div>
 
 
-                    <div class="nav-item" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                    <div class="nav-item">
                         <a class="nav-link" href="https://goo.gl/vaZ2JS" role="button" aria-label="GitHub">
                             <i class="fa fa-github align-bottom" aria-hidden="true"></i>
                         </a>
                     </div>
 
-                    <div class="nav-item" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                    <div class="nav-item">
                         <a class="nav-link" href="https://goo.gl/j6Djzf">
                             <i class="fa fa-twitter  align-bottom" aria-hidden="true"></i>
                         </a>
                     </div>
-                    <div class="nav-item" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                    <div class="nav-item">
                         <a class="nav-link" href="https://goo.gl/dYR1BD">
                             <i class="fa fa-codepen  align-bottom" aria-hidden="true"></i>
                         </a>
                     </div>
-                    <div class="nav-item" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                    <div class="nav-item">
                         <a class="nav-link" href="https://goo.gl/ArzjeE">
                             <i class="fa fa-youtube  align-bottom" aria-hidden="true"></i>
                         </a>
                     </div>
-                    <div class="nav-item" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                    <div class="nav-item">
                         <a class="nav-link" href="https://goo.gl/8SdvkS">
                             <i class="fa fa-free-code-camp align-bottom" aria-hidden="true"></i>
                         </a>
@@ -116,7 +116,7 @@
                 </div>
                 <hr>
                 <div id="content2">
-                    
+
                 </div>
             </div>
 
@@ -302,17 +302,22 @@
             </div>
 
         </div>
-
     </nav>
 
-
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
+    <script>
+        $(document).on('click', '.navbar-collapse.collapse', function (e) {
+            if ($(e.target).is('a')) {
+                $(this).collapse('hide');
+            }
+        });
+    </script>
 </body>
 
 </html>
